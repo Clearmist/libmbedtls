@@ -84,8 +84,8 @@
 #if !defined(_WIN32_WINNT)
 #define _WIN32_WINNT 0x0400
 #endif
-#include <wincrypt.h>
 #include <windows.h>
+#include <wincrypt.h>
 
 int mbedtls_platform_entropy_poll(void *data, unsigned char *output, size_t len, size_t *olen)
 {
